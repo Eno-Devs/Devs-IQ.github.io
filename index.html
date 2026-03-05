@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Francis M'BRA | Data Analyst</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Portfolio de Francis M'BRA, Data Analyst spécialisé en Power BI, SQL, automatisation et analyse statistique.">
+    <meta name="keywords" content="Data Analyst, Power BI, SQL, Python, Business Intelligence">
+
+    <link rel="icon" type="image/png" href="/favicon-32x32.png">
+    <link rel="apple-touch-icon" href="/favicon-32x32.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        .lang-switch { position: fixed; top: 20px; right: 20px; z-index: 1000; }
+        .lang-switch button { margin-left: 8px; padding: 6px 12px; cursor: pointer; }
+
+        /* Animations */
+        .fade-in { opacity: 0; transform: translateY(20px); transition: all 0.8s ease; }
+        .fade-in.visible { opacity: 1; transform: translateY(0); }
+
+        /* Mobile Optimization */
+        @media (max-width: 768px) {
+            nav ul { flex-direction: column; }
+            .projects-grid { grid-template-columns: 1fr !important; }
+            .skills-table { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="lang-switch">
+    <button onclick="setLang('fr')">FR</button>
+    <button onclick="setLang('en')">EN</button>
+</div>
+
+<header class="fade-in">
+    <div class="container">
+        <h1>Francis M'BRA</h1>
+        <p id="subtitle-fr">Data Analyst | Power BI Developer | Chargé d'études statistiques</p>
+        <p id="subtitle-en" style="display:none;">Data Analyst | Power BI Developer | Statistical Analyst</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/francis-enock-m-bra-78b4a112b/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/FrancisMBRA" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="assets/Francis_M_BRA_CV.pdf" download><i class="fas fa-file-arrow-down"></i></a>
+        </div>
+    </div>
+</header>
+
+<nav class="fade-in">
+    <div class="container">
+        <ul>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#projects">Projets</a></li>
+            <li><a href="#skills">Compétences</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<section id="about" class="section fade-in">
+    <div class="container">
+        <h2>À propos</h2>
+        <div class="about-content">
+            <img src="assets/images/profile-placeholder.jpg" class="profile-photo">
+            <div class="about-text">
+                <p id="about-fr">Je suis Data Analyst diplômé d'un Master 2 en Data Analyse & Démographie. J'accompagne les entreprises dans la transformation de leurs données en indicateurs de performance concrets pour la prise de décision.</p>
+                <p id="about-en" style="display:none;">I am a Data Analyst with a Master's degree in Data Analysis & Demography. I help businesses turn raw data into actionable insights for decision-making.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="projects" class="section fade-in">
+    <div class="container">
+        <h2>Projets</h2>
+        <div class="projects-grid">
+
+            <!-- Projet 1 -->
+            <div class="project-card">
+                <img src="assets/images/project-placeholder-1.jpg">
+                <div class="project-card-content">
+                    <h3>Dashboard Performance Commerciale</h3>
+                    <p>Analyse des ventes, productivité RH et gestion de stock pour Domino’s Pizza avec Power BI.</p>
+                    <div class="project-buttons">
+                        <a href="https://github.com/FrancisMBRA/dashboard-performance" target="_blank" class="btn">Documentation</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projet 2 -->
+            <div class="project-card">
+                <img src="assets/images/project-placeholder-2.jpg">
+                <div class="project-card-content">
+                    <h3>Analyse Pricing METRO</h3>
+                    <p>Analyse des marges, négociation commerciale et visualisation dynamique sous Power BI.</p>
+                    <div class="project-buttons">
+                        <a href="https://github.com/FrancisMBRA/metro-pricing-analysis" target="_blank" class="btn">Documentation</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projet 3 -->
+            <div class="project-card">
+                <img src="assets/images/project-placeholder-3.jpg">
+                <div class="project-card-content">
+                    <h3>Étude Statistique INSERM</h3>
+                    <p>Analyse multivariée sur données de santé publique (R, SAS, Excel avancé) avec plus de 600 répondants.</p>
+                    <div class="project-buttons">
+                        <a href="https://github.com/FrancisMBRA/inserm-stat-analysis" target="_blank" class="btn">Documentation</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projet 4 -->
+            <div class="project-card">
+                <img src="assets/images/project-placeholder-4.jpg">
+                <div class="project-card-content">
+                    <h3>Dashboard Suivi des Remises Clients</h3>
+                    <p>Projet universitaire Master : suivi des remises clients sous Power BI & R pour le pilotage commercial.</p>
+                    <div class="project-buttons">
+                        <a href="https://github.com/FrancisMBRA/customer-discount-dashboard" target="_blank" class="btn">Documentation</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="skills" class="section fade-in">
+    <div class="container">
+        <h2>Compétences</h2>
+        <div class="skills-table">
+
+            <div class="skill-column">
+                <h3>Data Visualisation</h3>
+                <ul><li>Power BI</li><li>Tableau</li><li>Excel Dashboards</li></ul>
+            </div>
+
+            <div class="skill-column">
+                <h3>Data Analysis</h3>
+                <ul><li>SQL</li><li>Python</li><li>R</li><li>SAS</li></ul>
+            </div>
+
+            <div class="skill-column">
+                <h3>ETL & Automatisation</h3>
+                <ul><li>DAX</li><li>Power Query</li><li>VBA</li><li>n8n</li></ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="section fade-in">
+    <div class="container">
+        <h2>Contact</h2>
+        <form action="https://formsubmit.co/mbraenock01@gmail.com" method="POST" class="contact-form">
+            <input type="text" name="name" placeholder="Nom" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="message" placeholder="Votre message"></textarea>
+            <button type="submit" class="btn">Envoyer</button>
+        </form>
+    </div>
+</section>
+
+<footer class="fade-in">
+    <div class="container">
+        <p>&copy; 2025 Francis M'BRA. Tous droits réservés.</p>
+    </div>
+</footer>
+
+<script>
+function setLang(lang) {
+  document.getElementById('subtitle-fr').style.display = lang === 'fr' ? 'block' : 'none';
+  document.getElementById('subtitle-en').style.display = lang === 'en' ? 'block' : 'none';
+  document.getElementById('about-fr').style.display = lang === 'fr' ? 'block' : 'none';
+  document.getElementById('about-en').style.display = lang === 'en' ? 'block' : 'none';
+}
+
+// Animations on Scroll
+const elements = document.querySelectorAll('.fade-in');
+window.addEventListener('scroll', () => {
+  elements.forEach(el => {
+    const pos = el.getBoundingClientRect().top;
+    if (pos < window.innerHeight - 100) {
+      el.classList.add('visible');
+    }
+  });
+});
+</script>
+
+</body>
+</html>
